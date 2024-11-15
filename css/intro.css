@@ -1,0 +1,66 @@
+.intro {
+    text-align: left;
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    border-top: 2px solid var(--border-color); /* Border color based on theme */
+}
+
+.intro-link {
+    color: var(--secondary-text-color); /* Link color based on theme */
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.intro h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77.45px;
+    color: var(--text-color); /* Heading color based on theme */
+    margin-bottom: 20px;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.primary-btn, .secondary-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.primary-btn {
+    background-color: var(--button-bg-color); /* Background color based on theme */
+    color: var(--button-text-color); /* Text color based on theme */
+}
+
+/* Secondary Button */
+.secondary-btn {
+    background-color: var(--background-color); /* Background color based on theme */
+    color: var(--text-color); /* Text color based on theme */
+    border: 1px solid var(--border-color); /* Border color based on theme */
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover effects for buttons */
+.primary-btn:hover, .secondary-btn:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+    border-color: rgba(255, 255, 255, 0.4); /* Darken border on hover */
+}

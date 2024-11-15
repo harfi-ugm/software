@@ -1,0 +1,96 @@
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.navbar.scrolled {
+    background-color: var(--scrolled-background-color); /* Dynamic background */
+    color: var(--scrolled-text-color); /* Dynamic text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+#navbar__logo {
+    font-family: 'montserrat';
+    font-size: 24px;
+    color: var(--text-color);
+    margin-right: 30px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar__links {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+
+/* Buttons */
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    border: 1px solid #27272A;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-in-btn {
+    background-color: transparent;
+}
+
+.sign-up-btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+}
+
+.sign-in-btn:hover,
+.sign-up-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+

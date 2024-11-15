@@ -1,0 +1,38 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark theme */
+body {
+    padding-top: 60px; /* Adjust this value to match the height of the navbar */
+    font-family: 'inter';
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Default theme variables (Dark Mode) */
+:root {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --secondary-text-color: #a1a1a1;
+    --border-color: #27272A;
+    --button-bg-color: #ffffff;
+    --button-text-color: #000000;
+    --scrolled-background-color: rgba(19, 19, 19, 0.8); /* Dark background when scrolled */
+    --scrolled-text-color: #ffffff; /* Text color for scrolled navbar */
+}
+
+/* Light Mode Variables */
+.light-mode {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --secondary-text-color: #333333;
+    --border-color: #dddddd;
+    --button-bg-color: #000000;
+    --button-text-color: #ffffff;
+    --scrolled-background-color: rgba(255, 255, 255, 0.8); /* Light background when scrolled */
+    --scrolled-text-color: #000000; /* Text color for scrolled navbar in light mode */
+}

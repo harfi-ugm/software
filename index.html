@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmahTI Project</title>
+    
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/intro.css">
+<link rel="stylesheet" href="css/service.css">
+<link rel="stylesheet" href="css/latest_project.css">
+<link rel="stylesheet" href="css/cta.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matemasie&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <h1 id="navbar__logo">OmahTI Analytics</h1>
+                <ul class="navbar__menu">
+                    <li><a href="https://omahti.web.id/division/front-end/" class="navbar__links">Divisions</a></li>
+                    <li><a href="/" class="navbar__links">Features</a></li>
+                    <li><a href="https://omahti.web.id/about-us/" class="navbar__links">About</a></li>
+                    <li><a href="https://www.instagram.com/omahti_ugm/" class="navbar__links">Contact</a></li>
+                </ul>
+                <div class="navbar__actions">
+                    <button class="dark-mode-toggle"><img src="images/Vector.png" alt="Switch to Light Mode" class="theme-icon"></button>
+                    <a href="/" class="button sign-in-btn">Sign In</a>
+                    <a href="/" class="button sign-up-btn">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <a href="/" class="intro-link">All OmahTI Divisions →</a>
+            <h1>Get essential insights <br>on OmahTI.</h1>
+            <div class="intro-buttons">
+                <button class="primary-btn">Get Started</button>
+                <button class="secondary-btn" id="more-analytics-btn" >More Analytics</button>
+            </div>
+        </section>
+    </main>
+    
+        <!-- Services Section -->
+    <section id="analytics-section" class="services-container">
+        <section class="services">
+            <div class="service-item">
+                <h1><span class="icon"><img src="images/logo.png" alt="" class="logo-icon"></span> Project Tracking</h1>
+                <p class="service-description">
+                    <strong>Monitor progress and contributions</strong> across all <br>OmahTI projects.
+                </p>
+                <div class="image-placeholder"><img src="images/Project_tracking.png" alt=""></div>
+                
+            </div>
+            <div class="service-item">
+                <h1><span class="icon"><img src="images/logo2.png" alt="" class="logo-icon"></span> Competition Analytics</h1>
+                <p class="service-description">
+                    <strong>Track participation and contributions</strong> in <br>IT Competitions.
+                </p>
+                <div class="image-placeholder"><img src="images/competetion_analysis.jpg" alt=""></div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <section class="latest-projects-container">
+        <div class="section-wrapper">
+        <section class="latest-projects">
+            <div class="projects-content">
+                <div class="projects-info">
+                    <h1 class="section-title">
+                        Latest<br>
+                        projects and<br>
+                        winnings by<br>
+                        OmahTI<br>
+                        divisions.<br>
+                    </h1>
+                    <p>Contributors:</p>
+                    <ul id="contributorsList">
+                        <li>Andreandhiki Riyanta</li>
+                        <li>Fahmi Shampoerna</li>
+                        <li>Daniel Tulung</li>
+                        <li class="additional-contributor" style="display: none;">Rama Andhika Pratama</li>
+                        <li class="additional-contributor" style="display: none;">Muhammad Hanif</li>
+                        <li class="additional-contributor" style="display: none;">Wibi Laksono Wijaya</li>
+                    
+                    </ul>
+                    <button id="toggleContributorsBtn">+3 more</button>
+                </div>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                            <img src="images/olc.png" alt="Project Image" class="card-image">
+                        <a href="/">OmahTI Learning Center</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/kaggle.png" alt="Project Image" class="card-image">
+                        <a href="/">Data Royale</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/oemoem.jpg" alt="Project Image" class="card-image">
+                        <a href="/">OemOem</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/datathon.jpg" alt="Project Image" class="card-image">
+                        <a href="https://dcse.fmipa.ugm.ac.id/?p=17878&lang=id">1st Place Datathon</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/porsenigama.jpg" alt="Project Image" class="card-image">
+                        <a href="/">PORSENIGAMA</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/project_mipa.jpg" alt="Project Image" class="card-image">
+                        <a href="/">FMIPA Projects</a>
+                    </div>
+                    <!-- Additional project cards, initially hidden -->
+                    <div class="project-card additional-card" style="display: none;">
+                        <img src="images/malpres.png" alt="Project Image" class="card-image">
+                        <a href="/">MALPRES MIPA</a>
+                    </div>
+                    <div class="project-card additional-card" style="display: none;">
+                        <img src="images/feb.png" alt="Project Image" class="card-image">
+                        <a href="https://ugm.ac.id/id/fakultas/fakultas-ekonomika-dan-bisnis/">FEB UGM's Website</a>
+                    </div>
+                    <div class="project-card additional-card" style="display: none;">
+                        <img src="images/kopasus.jpg" alt="Project Image" class="card-image">
+                        <a href="/">Kopassus</a>
+                    </div>
+                    
+                    <div class="more-button-container">
+                        <button id="toggleCardsBtn">
+                            <span class="icon"><img src="images/Expand more.png" alt=""></span> More
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="cta-content">
+                <p>
+                    <strong>Ready to share?</strong> Start by creating an account.<br>
+                    Speak to an <a href="#" class="cta-link">expert</a> if you need assistance.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button primary-button">Sign Up</a>
+                    <a href="#" class="cta-button secondary-button">Contact</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    </section>
+
+
+        
+
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <p>Information</p>
+            <ul>
+                <li><a href="https://omahti.web.id/about-us/">About</a></li>
+                <li><a href="https://www.instagram.com/omahti_ugm/">Contact</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p>Social</p>
+            <ul>
+                <li><a href="https://github.com/harfi-ugm/software.git">GitHub</a></li>
+                <li><a href="https://www.instagram.com/omahti_ugm/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/omahti/">LinkedIn</a></li>
+                <li><a href="https://x.com/omahti_ugm?lang=en">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-status">
+            <span class="status-indicator"></span> 
+            <a href="#" class="status-link">All systems normal</a>
+        </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

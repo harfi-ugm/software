@@ -1,0 +1,200 @@
+/* Latest Projects Section Styling */
+
+.latest-projects-container {
+    max-width: 92%;
+    border: 2px solid var(--border-color); /* Border color based on theme */
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.latest-projects {
+    display: flex;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    margin: 20px auto;
+}
+
+
+/* Line for .latest-projects section */
+.latest-projects::before {
+    content: '';
+    position: absolute;
+    top: -42px; /* Adjust to position */
+    bottom: -5%; /* Set halfway to make it solid */
+    left: 38%; /* Centered exactly in the middle */
+    width: 2px;
+    background-color: var(--border-color); /* Solid color */
+    z-index: 1;
+}
+
+.latest-projects::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Start halfway for the dotted part */
+    bottom: -306px; /* Adjust to the end position */
+    left: 38%; /* Centered exactly in the middle */
+    width: 2px;
+    background-image: linear-gradient(to bottom, var(--border-color) 25%, transparent 25%, transparent 50%, var(--border-color) 50%, var(--border-color) 75%, transparent 75%);
+    background-size: 2px 8px; /* Controls the spacing of dots */
+    z-index: 1;
+}
+
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.projects-info {
+    width: 32%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    margin-left: -10px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .latest-projects {
+        flex-direction: column;
+    }
+    .latest-projects::before {
+        display: none; /* Hide the line on smaller screens */
+    }
+    .projects-info,
+    .project-grid {
+        width: 100%; /* Full width in mobile view */
+    }
+}
+
+.projects-info h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 77.45px;
+    color: var(--text-color); /* Text color based on theme */
+    text-align: left; /* Ensures alignment */
+    margin: 0; /* Removes default margin */
+}
+
+
+
+.projects-info p {
+    font-size: 16px;
+    color: var(--secondary-text-color); /* Secondary text color based on theme */
+    margin-bottom: 10px;
+}
+
+/* Project Grid */
+.project-grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 90px;
+}
+
+.more-button-container {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-card, .additional-card {
+    background-color: var(--background-color); /* Background color based on theme */
+    border: 2px solid var(--border-color); /* Border color based on theme */
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-card img, .additional-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card a, .additional-card a {
+    color: var(--text-color); /* Link text color based on theme */
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for Contributors List */
+#contributorsList {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--secondary-text-color); /* Text color based on theme */
+    font-size: 16px;
+}
+
+#contributorsList li {
+    margin-bottom: 5px;
+}
+
+#toggleContributorsBtn {
+    background: none;
+    border: none;
+    color: var(--secondary-text-color); /* Text color based on theme */
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Toggle Button Styling */
+#toggleCardsBtn {
+    padding: 10px 20px;
+    background: var(--button-bg-color); /* Background color based on theme */
+    color: var(--button-text-color); /* Text color based on theme */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#toggleCardsBtn .icon img {
+    margin-right: 8px;
+    display: inline-block;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+#toggleCardsBtn:hover {
+    background: #444; /* Keep this hover effect universal */
+}
+
+
+/* Light Mode Button */
+.light-mode #toggleCardsBtn {
+    background-color: #e0e0e0; /* Light background color for visibility */
+    color: #333333; /* Darker text color to stand out on light background */
+}
+
+.light-mode #toggleCardsBtn:hover {
+    background-color: #efefef; /* Slightly darker on hover */
+}
