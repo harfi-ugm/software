@@ -1,0 +1,36 @@
+Muhamad Harfi Ibadurahman
+24/546877/PA/23216
+vercel = https://omahtioprecharfi.vercel.app/
+
+Optional Features Implemented
+
+1. Dark Mode and Light Mode
+  ● Description: Added a dark mode feature that changes the background and text colors for a more comfortable viewing experience in low-light conditions.
+  ● Implementation:
+    ○ Created CSS variables (--background-color, --text-color, etc.) to dynamically adjust color schemes.
+    ○ JavaScript is used to toggle between dark and light modes by adding/removing a light-mode class on the body.
+    ○ An icon change for the theme toggle button reflects the current mode (e.g., sun icon for light mode, moon icon for dark mode).
+    ○ The dark mode setting also applies to all main components, such as the navbar, footer, buttons, and card backgrounds.
+
+2. Interactive Links
+  ● Description: All external links in the "Social" and "Information" sections are interactive and direct users to appropriate platforms.
+  ● Implementation:
+    ○ Social Links: Each social icon links to the relevant social media page (GitHub, Instagram, LinkedIn, Twitter), making it easier for users to connect with OmahTI on multiple platforms. Except github, it go to my repo
+    ○ Information Links: Additional links like "About" direct users to relevant OmahTI web pages, These links enhance navigation and allow users to access related resources directly from the web app.
+    ○ But there some section i haven't input the link
+
+3. Smooth Animations
+  ● Description: Various animations were added to enhance the visual appeal and interactivity of the web app.
+  ● Implementation:○ Sticky Header Animation: The header remains fixed at the top of the page when scrolling, making navigation accessible and adding a polished look.
+    ○ Button Hover Animation: When hovering over buttons, they display a smooth background or shadow effect, providing visual feedback to users and enhancing interactivity.
+    ○ Image Card Hover Animation: Cards containing images have a floating animation on hover, which lifts the card slightly to create a 3D effect, giving the interface a dynamic look.
+
+4. Enhanced User Experience
+  ● Description: Additional enhancements were made to create a seamless and enjoyable user experience.
+  ● Implementation:
+    ○ Button States and Hover Effects: Buttons change color and display subtle animations to show their interactive state.
+    ○ Navbar Links and Actions: All navbar items provide a visual cue when hovered over, making it clear that they are clickable links.
+    ○ Text and Image Layouts: Careful alignment and spacing adjustments were made to maintain a clean and structured design, even at different zoom levels or screen sizes.
+
+5. Responsif
+  ● Description: i haven't made any responsif, just a little, so for better view, i recommending to see my web app on scale 150% default desktop scale 😞
